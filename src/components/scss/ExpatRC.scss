@@ -1,0 +1,52 @@
+.expatrc {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	align-items: stretch;
+	justify-content: stretch;
+	gap: 15px;
+
+	max-height: 100%;
+
+	> div {
+		border-radius: 10px;
+		box-shadow: 2px 2px 10px black;
+
+		padding: 15px;
+
+		&.table {
+			display: grid;
+			grid-template-rows: 6% 92%;
+			justify-content: stretch;
+			gap: 2%;
+			background-color: crimson;
+
+			#search {
+				background-color: rgba($color: white, $alpha: 0.2);
+				border: solid 2px orangered;
+				border-radius: 7px;
+				box-shadow: 0 0 5px black;
+				color: white;
+
+				&::placeholder {
+					color: inherit;
+				}
+			}
+
+			.grid {
+				display: flex;
+				flex-direction: column;
+				padding: 7px;
+				gap: 7px;
+				height: 75vh;
+				overflow-y: auto;
+				background-color: blueviolet;
+				place-self: stretch;
+			}
+		}
+
+		&.info {
+			background-color: coral;
+		}
+	}
+}

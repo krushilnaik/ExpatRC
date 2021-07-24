@@ -1,0 +1,22 @@
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 5px 1em;
+
+	background-color: rgba($color: crimson, $alpha: 0.5);
+	border-radius: 10px;
+
+	* {
+		align-self: center;
+	}
+
+	.logo {
+		font-family: 'Lobster', cursive;
+	}
+
+	.group {
+		display: flex;
+		flex-direction: row;
+	}
+}

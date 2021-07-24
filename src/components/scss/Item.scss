@@ -1,0 +1,33 @@
+.item {
+	display: grid;
+	grid-template-columns: 6em 1fr 4em 2em;
+	gap: 5px;
+	place-items: center;
+
+	background-color: red;
+	padding: 5px;
+	border-radius: 7px;
+
+	.cost {
+		//
+	}
+
+	.name {
+		justify-self: flex-start;
+	}
+
+	.frequency {
+		//
+	}
+
+	.delete {
+		height: 1.25em;
+		width: 1.25em;
+		padding: 5px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: solid 2px black;
+	}
+}
