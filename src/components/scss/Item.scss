@@ -1,33 +1,103 @@
 .item {
 	display: grid;
-	grid-template-columns: 6em 1fr 4em 2em;
-	gap: 5px;
-	place-items: center;
+	grid-template-columns: 9em auto 5.5em 3em;
 
-	background-color: red;
+	background-color: rgba($color: white, $alpha: 0.35);
 	padding: 5px;
 	border-radius: 7px;
+	transition: background-color 200ms;
+
+	&:hover {
+		background-color: rgba($color: white, $alpha: 0.5);
+	}
+
+	input {
+		background-color: rgba($color: white, $alpha: 0.4);
+		border-radius: 7px;
+		border: none;
+		text-align: center;
+		line-height: 1.75em;
+		outline: none;
+		font-size: 20px;
+		transition: 0.5s;
+
+		&:hover,
+		&:focus {
+			background-color: rgba($color: rgb(155, 204, 206), $alpha: 0.5);
+		}
+
+		&:focus {
+			border: solid 1px white;
+		}
+	}
 
 	.cost {
-		//
+		display: grid;
+		grid-template-columns: 1fr 4fr;
+		border-radius: 10px;
+		gap: 7px;
+		padding: 7px;
+		background-color: rgba($color: white, $alpha: 0.5);
+		width: min-content;
+		justify-self: flex-start;
+
+		select,
+		input {
+			font-size: 16px;
+		}
+
+		input {
+			width: 6em;
+		}
+
+		#currency {
+			background-color: transparent;
+			border: none;
+		}
 	}
 
 	.name {
 		justify-self: flex-start;
+		width: 15em;
 	}
 
 	.frequency {
-		//
+		justify-self: flex-start;
+		width: 4em;
 	}
 
-	.delete {
-		height: 1.25em;
-		width: 1.25em;
-		padding: 5px;
-		border-radius: 50%;
+	.button-group {
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		border: solid 2px black;
+		flex-direction: row;
+		margin-right: 25px;
+
+		button {
+			height: 1.25em;
+			width: 1.25em;
+			padding: 5px;
+			border-radius: 15%;
+			outline: none;
+			border: none;
+			background-color: transparent;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: solid 2px transparent;
+			cursor: pointer;
+			transition: 200ms;
+
+			i {
+				color: rgba($color: white, $alpha: 0.5);
+				font-size: 0.75em;
+			}
+
+			&.delete:hover {
+				color: crimson;
+			}
+
+			&.edit:hover {
+				color: #ffa07d;
+			}
+		}
 	}
 }
