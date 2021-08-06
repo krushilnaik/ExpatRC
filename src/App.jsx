@@ -9,7 +9,6 @@ function App() {
 		<>
 			<Navbar />
 			<ExpatRC />
-			<footer>Hosted on GitHub Pages</footer>
 		</>
 	);
 }
