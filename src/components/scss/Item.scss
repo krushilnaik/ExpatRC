@@ -75,7 +75,10 @@
 	.button-group {
 		display: flex;
 		flex-direction: row;
-		margin-right: 25px;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba($color: white, $alpha: 0.4);
+		border-radius: 7px;
 
 		button {
 			height: 1.25em;
